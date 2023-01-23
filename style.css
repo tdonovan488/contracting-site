@@ -1,0 +1,68 @@
+
+/* General Stuff */
+body{
+    margin: 0px;
+    height: 1000px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Nav Bar */
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    height: 50px;
+    width: 10vw;
+    min-width: 100px;
+    background-color: bisque;
+    margin: 1vw;
+    text-align: center;
+}
+
+.dropdown{
+    width: 100%;
+    position: relative;
+}
+#menu-icon{
+    float: right;
+    margin-right: 1vw;
+}
+
+/* #dropdownMenuButton{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+} */
+.dropdown-menu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+.dropdown-item{
+    background-color: blue;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+    }
+}
